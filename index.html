@@ -11,35 +11,57 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Comrad</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-md navbar-custom">
+      <h3 class="my-auto"><a class="navbar-brand" href="#">Comrad</a></h3>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
+        <div class="btn-group ml-auto">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            English
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">Spanish</button>
+            <button class="dropdown-item" type="button">Dothraki</button>
+          </div>
+        </div>
+        <ul class="navbar-nav ml-auto large mb-2 mb-md-0">
+              <li class="nav-item active">
+                  <a class="nav-link py-1" href="#">Docs</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link py-1" href="#">Get Comrad</a>
+              </li>
+
+          </ul>
       </div>
-    </nav>
+  </nav>
+
+
+    <div class="container" style="color: white; background-color: #d64000">
+      <p style="text-align: center;">FEATURES HOW TO USE CONTACT US</p>
+      <p>Comrad is modern, open source softare for radio stations
+      that handles playlist logging, traffic management, reporting,
+      and more.</p>
+    </div>
+
+    <div class="container" style="color: white; background-color: #7db2bf;">
+      <p>Get notified when Comrad is available.</p>
+      <p>
+        <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="email">Email address:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+        </form>
+      </p>
+    </div>
+
+    <div class="container" style="background-color: #cae0e5;">
+      <p>Screenshot of Comrad</p>
+    </div>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

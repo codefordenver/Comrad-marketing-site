@@ -4210,6 +4210,11 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
+.navbar-custom {
+  background-color: #7db2bf;
+  color: white;
+}
+
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
