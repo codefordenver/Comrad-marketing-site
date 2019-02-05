@@ -1,0 +1,18 @@
+.border-radius{
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.intro-arc{
+  display: inline-block;
+  width: 100%;
+  border-radius: 0% 0% 60% 60%;
+}
+
+.intro-container{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  background-color: #d64000;
+}
