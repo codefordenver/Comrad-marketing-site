@@ -1,3 +1,8 @@
+body {
+  margin: auto 0;
+  font-family: Roboto;
+}
+
 .border-radius{
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -10,9 +15,28 @@
 }
 
 .intro-container{
+  font-family: Montserrat;
   width: 80%;
   margin-right: auto;
   margin-left: auto;
   color: white;
   background-color: #d64000;
 }
+
+.footer {
+  padding: 20px 24px 0px 24px;
+  display: inline-block;
+  color:#FFF;
+  background-color:#7DB2BF;
+  width: 100%;  
+}
+/*
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+*/
+
+.copyright {
+  text-align: left auto;
+}
+
