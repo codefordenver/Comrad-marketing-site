@@ -36,7 +36,13 @@ img {
 }
 */
 
-.copyright {
+.ellipse {
   text-align: left auto;
 }
 
+#copyright {
+    text-align: left auto;
+    position: relative;
+    margin-top: -40px;
+  }
+  
