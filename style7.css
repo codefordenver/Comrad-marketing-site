@@ -43,15 +43,22 @@ body {
   display: inline-block;
   color:#FFF;
   background-color:#7DB2BF;
-  width: 100%;  
+  width: 100%;
 }
 
 img {
     height: "100%";
     width: "100%";
-    filter: drop-shadow(0 0 5px #000);
 }
 
+#drop-shadow-header{
+  filter: drop-shadow(0px 5px 7px #000);
+  margin-top: -3px;
+}
+
+#drop-shadow-footer{
+  filter: drop-shadow(0 -5px 7px #000);
+}
 
 .elipse {
   text-align: left auto;
@@ -62,4 +69,3 @@ img {
     position: relative;
     margin-top: -40px;
   }
-  
