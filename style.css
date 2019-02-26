@@ -23,6 +23,20 @@ body {
   background-color: #d64000;
 }
 
+.grid-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box img {
+  width: 30%;
+}
+
+.box {
+  margin: 20px;
+}
+
 .footer {
   padding: 20px 24px 0px 24px;
   display: inline-block;
@@ -30,11 +44,6 @@ body {
   background-color:#7DB2BF;
   width: 100%;  
 }
-/*
-img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-}
-*/
 
 .ellipse {
   text-align: left auto;

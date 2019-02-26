@@ -29,6 +29,25 @@ body {
   background-color: #d64000;
 }
 
+.grid-wrapper {
+  display: grid;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+}
+
+.box > img {
+  width: 60%;
+}
+
+.box {
+  padding: 10px;
+  margin: 20px;
+}
+
 .contact-container{
   font-family: Montserrat;
   width: 80%;
@@ -45,13 +64,6 @@ body {
   background-color:#7DB2BF;
   width: 100%;  
 }
-
-img {
-    height: "100%";
-    width: "100%";
-    filter: drop-shadow(0 0 5px #000);
-}
-
 
 .elipse {
   text-align: left auto;
