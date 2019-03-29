@@ -12,10 +12,20 @@ body {
   border-radius: 0px 0px 10px 10px;
 }
 
+.navbar-custom {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+}
+
 .intro-arc{
   display: inline-block;
   text-align: left auto;
   width: 100%;
+}
+
+.links-container{
+  font-family: Montserrat;
+  color: white;
 }
 
 .intro-container{
@@ -29,11 +39,35 @@ body {
   background-color: #d64000;
 }
 
+#links1{
+  text-align: center;
+  position: relative;
+  margin-top: -60px;
+}
+
+
+#links2{
+text-align: center;
+position: relative;
+margin-top: -60px;
+}
+
+.space2{
+color:#7DB2BF;
+margin: 10px;
+}
+
+.space1{
+color:#007283;
+margin: 10px;
+}
 .email-container{
+  display: flex;
+  
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  padding: 10px 24px 10px 120px;
+  padding: 10px 24px 10px 80px;
   background-image: url(images/contact-arrow.svg);
   background-repeat: no-repeat;
 }
@@ -78,10 +112,11 @@ body {
   margin-right: auto;
   padding-right: 20px;
   grid-gap: 10px;
-  border-right: 1px solid #D64000;
+  
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
   /* grid-template-areas: 
+  "features" "list"
   "features" "button"
   "features" "title"
   "features" "list"
@@ -102,11 +137,39 @@ body {
 .features-grid__description{
   /* grid-area: features; */
   grid-row-start: 1;
-  grid-row-end: 16;
+  grid-row-end: 17;
+  padding-right: 24px;
+  
+  
+  background-repeat: no-repeat;
+}
+
+.features-grid__rule1{
+  /* grid-area: features description; */
   padding-right: 24px;
   border-right: 1px solid #D64000;
   background-image: url(images/large-record.svg);
   background-repeat: no-repeat;
+}
+
+@media (max-width:767px) {
+  .features-grid__rule1 {
+  border-right: 0px solid #D64000;
+  background-image: none;
+  }
+}
+
+.features-grid__rule2{
+  /* grid-area: features list; */
+  border-right: 1px solid #D64000;
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+
+@media (max-width:767px) {
+  .features-grid__rule2 {
+  border-right: 0px solid #D64000;
+  }
 }
 
 .features-grid__button{
@@ -149,6 +212,8 @@ body {
     display: block;
     }
   }
+
+
 
 .how-to-use-grid{
   display: grid;
