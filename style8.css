@@ -22,6 +22,12 @@ body {
   margin-bottom: 26px;
 }
 
+@media (max-width:767px) {
+  .links-container{
+     visibility: hidden;
+   }
+ }
+
 .intro-container{
   font-family: Montserrat;
   width: 80%;
