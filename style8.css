@@ -227,6 +227,10 @@ padding: 0px 14px 0px 14px;
   border-bottom: 1px solid #103090;
 }
 
+.features-grid__button img{
+  width: 12%;
+}
+
 .features-grid__title{
   display: flex;
   justify-content: left;
@@ -259,6 +263,10 @@ padding: 0px 14px 0px 14px;
     display: block;
     }
   }
+
+    .features-grid__button img{
+      width: 17%;
+    }
 
 .how-to-use-grid{
   display: grid;
@@ -371,11 +379,35 @@ padding: 0px 14px 0px 14px;
   display: inline-block;
   color:#FFF;
   background-color:#7DB2BF;
-  width: 100%;  
+  width: 100%; 
+}
+
+.footer2{
+  padding: 20px 24px 0px 24px;
+  position: inline-block;
+  color:#FFF;
+  background-color:#7DB2BF;
+  width: 100%;
+  display: none;
 }
 
 .footer a {
   color: #fff;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #007283;
+  text-decoration: underline;
+}
+
+.footer2 a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer2 a:hover {
+  color: #007283;
   text-decoration: underline;
 }
 
@@ -416,8 +448,16 @@ padding: 0px 14px 0px 14px;
   #team {
     margin-bottom: 10px;
   }
-}
 
+  .footer {
+    display: none;
+  }  
+
+  .footer2 {
+    display: block;
+    padding: 5px;
+    }
+  }
 
 @media (max-width:767px) {
   .footer-content {
