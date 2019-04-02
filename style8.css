@@ -300,7 +300,8 @@ padding: 0px 14px 0px 14px;
  margin: 0px 24px;
 }
 
-.amazon{
+#amazon{
+  margin: 50px;
   padding: 30px;
 }
 
@@ -377,6 +378,46 @@ padding: 0px 14px 0px 14px;
   color: #fff;
   text-decoration: underline;
 }
+
+.footer-middle {
+  filter: drop-shadow(3px -3px 3px #000);
+  height: 100%;
+}
+
+.footer-copyright {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  z-index: 5;
+}
+
+.footer-image {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 960px) {
+  .footer-image {
+    display: none;
+  }
+
+  .footer-copyright {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .footer-middle {
+    filter: none;
+  }
+
+  #team {
+    margin-bottom: 10px;
+  }
+}
+
 
 @media (max-width:767px) {
   .footer-content {
