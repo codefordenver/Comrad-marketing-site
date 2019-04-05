@@ -45,8 +45,6 @@
         </div>
       </div>
 
-
-
       <ul class="navbar-nav ml-auto large mb-2 mb-md-0">
         <li class="nav-item active">
           <a class="nav-link py-1" href="#">Docs</a>
@@ -54,43 +52,43 @@
         <li class="nav-item">
           <a class="nav-link py-1" href="#">Get Comrad</a>
         </li>
-
       </ul>
     </div>
   </nav>
 
   <!-- Intro -->
+  <!-- Intro -->
   <div class="intro-container border-radius">
 
-    <div class="row">
-      <div class="col-1">
-      </div>
-      <div class="col-10" ID="top-elipse">
-        <img src="images/top-elipse.svg" alt="elipse" class="img-fluid" />
-      </div>
-      <div class="col-1">
-      </div>
-    </div>
-
-    <div class="links-container2">
       <div class="row">
         <div class="col-1">
         </div>
-        <div class="col-10" ID="links2">
-          <a href="#features-grid" class="scroll-link">FEATURES</a><a href="#how-to-use-grid" class="scroll-link">HOW TO USE</a><a
-            href="#contact-container" class="scroll-link">CONTACT US</a>
+        <div class="col-10" ID="top-elipse">
+          <img src="images/top-elipse.svg" alt="elipse" class="img-fluid" />
         </div>
         <div class="col-1">
         </div>
       </div>
+  
+      <div class="links-container2">
+        <div class="row">
+          <div class="col-1">
+          </div>
+          <div class="col-10" ID="links2">
+            <a href="#features-grid" class="scroll-link">FEATURES</a><a href="#how-to-use-grid" class="scroll-link">HOW TO USE</a><a
+              href="#contact-container" class="scroll-link">CONTACT US</a>
+          </div>
+          <div class="col-1">
+          </div>
+        </div>
+      </div>
+  
+      <div>
+        <p>Comrad is modern, open source software for radio stations
+          that handles playlist logging, traffic management, reporting,
+          and more.</p>
+      </div>
     </div>
-
-    <div>
-      <p>Comrad is modern, open source software for radio stations
-        that handles playlist logging, traffic management, reporting,
-        and more.</p>
-    </div>
-  </div>
 
   <!-- Email subscription -->
   <div class="email-container" style="color: white; background-color: #7db2bf">
@@ -133,12 +131,12 @@
         <p style="font-style: italic;">Click on a feature to learn more.</p>
       </div> -->
       <div class="features-grid__button">
-        <img src="images/playbutton-blue.svg">
+        <img src="images/playbutton-blue.svg" ID="bluebutton">
       </div>
       <div class="features-grid__title">
         <h3 style="color: #007283; font-weight: bold;">SHOW SCHEDULING</h3>
       </div>
-      <div class="features-grid__list">
+      <div class="features-grid__list border-radius">
         <ul>
           <li>Set up regular shows in a friendly, Google Calendar-esque interface.
           </li>
@@ -191,7 +189,7 @@
       <div class="features-grid__title">
         <h3 style="color: #007283; font-weight: bold;">STATION WEBSITE INTEGRATION</h3>
       </div>
-      <div class="features-grid__list">
+      <div class="features-grid__list" ID="redbutton">
         <ul>
           <li>Comrad’s JavaScript widgets let you display data from the system in real-time on your website, with
             minimal coding and development effort.
@@ -344,6 +342,7 @@
         $(".features-grid__list:not(:first)").slideToggle();
       })
     </script>
+
 </body>
 
 </html>
