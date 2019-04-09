@@ -57,38 +57,28 @@
   </nav>
 
   <!-- Intro -->
-  <!-- Intro -->
-  <div class="intro-container border-radius">
-
-      <div class="row">
-        <div class="col-1">
-        </div>
-        <div class="col-10" ID="top-elipse">
-          <img src="images/top-elipse.svg" alt="elipse" class="img-fluid" />
-        </div>
-        <div class="col-1">
-        </div>
-      </div>
-  
-      <div class="links-container2">
-        <div class="row">
-          <div class="col-1">
-          </div>
-          <div class="col-10" ID="links2">
-            <a href="#features-grid" class="scroll-link">FEATURES</a><a href="#how-to-use-grid" class="scroll-link">HOW TO USE</a><a
-              href="#contact-container" class="scroll-link">CONTACT US</a>
-          </div>
-          <div class="col-1">
-          </div>
-        </div>
-      </div>
-  
-      <div>
-        <p>Comrad is modern, open source software for radio stations
-          that handles playlist logging, traffic management, reporting,
-          and more.</p>
-      </div>
+  <div class="elipse-container">
+    <div class="col-lg-12" ID="top-elipse">
+      <img src="images/top-elipse.svg" alt="elipse" class="img-fluid" />
     </div>
+  </div>
+  
+  <div class="links-container2" ID="links2">
+        <a href="#features-grid" class="scroll-link">FEATURES</a><a href="#how-to-use-grid" class="scroll-link">HOW TO USE</a><a
+        href="#contact-container" class="scroll-link">CONTACT US</a>
+  </div>
+
+  <div style="overflow: hidden;" class="intro-container border-radius">
+    <div style="text-align: center; float: right" ID="availability">
+      <div class="available">Available</div>
+      <div ID="summer">Summer<br>  
+        <span class="year">2019</span>
+      </div>
+  </div>
+    Comrad is modern, open source software for radio stations
+    that handles playlist logging, traffic management, reporting,
+    and more.      
+  </div>
 
   <!-- Email subscription -->
   <div class="email-container" style="color: white; background-color: #7db2bf">
@@ -127,11 +117,8 @@
     </div>
 
     <div class="features-grid__rule2">
-      <!-- <div class="features-grid__list">
-        <p style="font-style: italic;">Click on a feature to learn more.</p>
-      </div> -->
       <div class="features-grid__button">
-        <img src="images/playbutton-blue.svg" ID="bluebutton">
+        <img src="images/playbutton-blue.svg" onmouseover="this.src='images/playbutton-blue-hover.svg';" onmouseout="this.src='images/playbutton-blue.svg';">
       </div>
       <div class="features-grid__title">
         <h3 style="color: #007283; font-weight: bold;">SHOW SCHEDULING</h3>
@@ -149,7 +136,7 @@
       </div>
 
       <div class="features-grid__button">
-        <img src="images/playbutton-green.svg">
+        <img src="images/playbutton-green.svg" onmouseover="this.src='images/playbutton-green-hover.svg';" onmouseout="this.src='images/playbutton-green.svg';">
       </div>
       <div class="features-grid__title">
         <h3 style="color: #007283; font-weight: bold;">PLAYLIST LOGGING</h3>
@@ -168,7 +155,7 @@
       </div>
 
       <div class="features-grid__button">
-        <img src="images/playbutton-gold.svg">
+        <img src="images/playbutton-gold.svg" onmouseover="this.src='images/playbutton-gold-hover.svg';" onmouseout="this.src='images/playbutton-gold.svg';">
       </div>
       <div class="features-grid__title">
         <h3 style="color: #007283; font-weight: bold;">TRAFFIC MANAGEMENT</h3>
@@ -184,7 +171,7 @@
       </div>
 
       <div class="features-grid__button">
-        <img src="images/playbutton-red.svg">
+        <img src="images/playbutton-red.svg" onmouseover="this.src='images/playbutton-red-hover.svg';" onmouseout="this.src='images/playbutton-red.svg';">
       </div>
       <div class="features-grid__title">
         <h3 style="color: #007283; font-weight: bold;">STATION WEBSITE INTEGRATION</h3>
@@ -200,7 +187,7 @@
       </div>
 
       <div class="features-grid__button">
-        <img src="images/playbutton-purple.svg">
+        <img src="images/playbutton-purple.svg" onmouseover="this.src='images/playbutton-purple-hover.svg';" onmouseout="this.src='images/playbutton-purple.svg';">
       </div>
       <div class="features-grid__title">
         <h3 style="color: #007283; font-weight: bold;">REPORTING</h3>
@@ -293,7 +280,6 @@
     </div>
   </footer>
 
-  <footer class="footer2"> 
   <footer class="footer2">
       <div class="container-fluid">
         <!-- <div class="row">
