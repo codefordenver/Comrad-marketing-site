@@ -5,14 +5,24 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-  <title>Comrad</title>
+  <title>Comrad - Radio Station Software for Playlist Logging and Traffic Management</title>
+  <meta content="Comrad is modern, open source software for radio stations that handles playlist logging, traffic management, reporting, and more." name="description" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <!-- Stylesheet -->
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="animate.css">
   <!-- Google fonts CSS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138605483-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-138605483-1');
+  </script>
 </head>
 
 <body>
@@ -34,26 +44,26 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
-      <div class="btn-group ml-auto">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          English
-        </button>
-        <div class="dropdown-menu dropdown-menu-right">
-          <button class="dropdown-item" type="button">Espa&ntilde;ol</button>
-        </div>
-      </div>
+    <!-- <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse"> -->
+      <!-- <div class="btn-group ml-auto"> -->
+        <!-- <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" -->
+          <!-- aria-expanded="false"> -->
+          <!-- English -->
+        <!-- </button> -->
+        <!-- <div class="dropdown-menu dropdown-menu-right"> -->
+          <!-- <button class="dropdown-item" type="button">Espa&ntilde;ol</button> -->
+        <!-- </div> -->
+      <!-- </div> -->
 
-      <ul class="navbar-nav ml-auto large mb-2 mb-md-0">
-        <li class="nav-item active">
-          <a class="nav-link py-1" href="#">Docs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link py-1" href="#">Get Comrad</a>
-        </li>
-      </ul>
-    </div>
+      <!-- <ul class="navbar-nav ml-auto large mb-2 mb-md-0"> -->
+        <!-- <li class="nav-item active"> -->
+          <!-- <a class="nav-link py-1" href="#">Docs</a> -->
+        <!-- </li> -->
+        <!-- <li class="nav-item"> -->
+          <!-- <a class="nav-link py-1" href="#">Get Comrad</a> -->
+        <!-- </li> -->
+      <!-- </ul> -->
+    <!-- </div> -->
   </nav>
 
   <!-- Intro -->
@@ -83,14 +93,19 @@
   <!-- Email subscription -->
   <div class="email-container" style="color: white; background-color: #7db2bf">
     <p>Get notified when Comrad is available.</p>
-    <form class="form-inline">
+    <form class="form-inline" action="https://prismtechstudios.us20.list-manage.com/subscribe/post?u=fbdcc1ee3273421d18c93cfa5&amp;id=6906142ae5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fbdcc1ee3273421d18c93cfa5_6906142ae5" tabindex="-1" value=""></div>
       <div class="form-group">
         <label class="sr-only" for="email">Email address:</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-          placeholder="Enter email">
+        <input type="email" class="form-control required email" required name="EMAIL"  id="mce-EMAIL" aria-describedby="emailHelp" placeholder="Enter email">
         <button type="submit" class="btn btn-primary">Subscribe</button>
       </div>
     </form>
+    
   </div>
 
   <!-- Screenshot of Comrad container -->
@@ -102,7 +117,6 @@
 
   <!-- Orange separator -->
   <div class="separator-container" style="background-color: #d64000;">
-    <p></p>
   </div>
 
   <!-- Features container -->
@@ -117,6 +131,7 @@
     </div>
 
     <div class="features-grid__rule2">
+      <div class="features animated slideInRight"> 
       <div class="features-grid__button">
         <img src="images/playbutton-blue.svg" onmouseover="this.src='images/playbutton-blue-hover.svg';" onmouseout="this.src='images/playbutton-blue.svg';">
       </div>
@@ -134,8 +149,10 @@
           </li>
         </ul>
       </div>
+    </div>
 
-      <div class="features-grid__button">
+    <div class="features animated slideInRight">  
+    <div class="features-grid__button">
         <img src="images/playbutton-green.svg" onmouseover="this.src='images/playbutton-green-hover.svg';" onmouseout="this.src='images/playbutton-green.svg';">
       </div>
       <div class="features-grid__title">
@@ -153,7 +170,9 @@
           </li>
         </ul>
       </div>
+    </div>
 
+    <div class="features animated slideInRight">
       <div class="features-grid__button">
         <img src="images/playbutton-gold.svg" onmouseover="this.src='images/playbutton-gold-hover.svg';" onmouseout="this.src='images/playbutton-gold.svg';">
       </div>
@@ -169,7 +188,9 @@
           </li>
         </ul>
       </div>
+    </div>
 
+    <div class="features animated slideInRight">
       <div class="features-grid__button">
         <img src="images/playbutton-red.svg" onmouseover="this.src='images/playbutton-red-hover.svg';" onmouseout="this.src='images/playbutton-red.svg';">
       </div>
@@ -185,7 +206,9 @@
           </li>
         </ul>
       </div>
+    </div>
 
+    <div class="features animated slideInRight">    
       <div class="features-grid__button">
         <img src="images/playbutton-purple.svg" onmouseover="this.src='images/playbutton-purple-hover.svg';" onmouseout="this.src='images/playbutton-purple.svg';">
       </div>
@@ -199,11 +222,12 @@
         </ul>
       </div>
     </div>
-  </div>
 
+  </div>
+</div> 
+     
   <!-- Orange separator -->
   <div class="separator-container" style="background-color: #d64000;">
-    <p></p>
   </div>
 
   <!-- How to use container -->
@@ -249,16 +273,6 @@
       line at <a href="mailto:info@getcomrad.org">info@getcomrad.org</a>.</p>
   </div>
 
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-3">Column 1</div>
-      <div class="col-sm-12 col-md-6 col-lg-3">Column 2</div>
-      <div class="col-sm-12 col-md-6 col-lg-3">Column 3</div>
-      <div class="col-sm-12 col-md-6 col-lg-3">Column 4</div>
-    </div>
-  </div> -->
-
-
   <!-- Footer -->
   <footer class="footer">
     <div class="container-fluid">
@@ -274,7 +288,8 @@
           </div>
         </div>
         <div class="col-lg-2">
-          <div style="text-align: right" ID="team"><a href="#">The Comrad Team</a> | <a href="#">Comrad on GitHub</a></div>
+          <!-- <div style="text-align: right" ID="team"><a href="#">The Comrad Team</a> |  -->
+          <a href="https://github.com/codefordenver/comrad" target="_blank">Comrad on GitHub</a></div>
         </div>
       </div>
     </div>
@@ -286,7 +301,7 @@
           <div class="col-lg-12"> -->
             <div class="text-center"><p>Comrad is open source software built by volunteers from <a href="https://www.codefordenver.org"
                 target="_blank">Code for Denver</a> and <a href="https://www.kgnu.org" target="_blank">KGNU</a>.</p>
-                <p><a href="#">The Comrad Team</a> | <a href="#">Comrad on GitHub</a></p> 
+                <!-- <p><a href="#">The Comrad Team</a> | <a href="#">Comrad on GitHub</a></p>  -->
                 <p>Copyright 2019 Code for Denver and Contributors</p>
             <!-- </div>
           </div>  -->
@@ -324,8 +339,7 @@
         $(".features-grid__title,.features-grid__button").click(function() {
           $(this).nextAll(".features-grid__list:first").slideToggle();
         });
-        //only leave the first feature list open on page load
-        $(".features-grid__list:not(:first)").slideToggle();
+        
       })
     </script>
 
