@@ -131,7 +131,7 @@
     </div>
 
     <div class="features-grid__rule2">
-      <div class="features animated slideInRight"> 
+      <div class="features animated slideInRight" ID="scheduling"> 
       <div class="features-grid__button">
         <img src="images/playbutton-blue.svg" onmouseover="this.src='images/playbutton-blue-hover.svg';" onmouseout="this.src='images/playbutton-blue.svg';">
       </div>
@@ -151,7 +151,7 @@
       </div>
     </div>
 
-    <div class="features animated slideInRight">  
+    <div class="features animated slideInRight" ID="playlist">  
     <div class="features-grid__button">
         <img src="images/playbutton-green.svg" onmouseover="this.src='images/playbutton-green-hover.svg';" onmouseout="this.src='images/playbutton-green.svg';">
       </div>
@@ -336,6 +336,15 @@
             $("#links1").fadeOut();
           }
         });
+
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 450) {
+            $("#scheduling").fadeIn();
+          } else {
+            $("#scheduling").fadeOut();
+          }
+        });
+
         $(".features-grid__title,.features-grid__button").click(function() {
           $(this).nextAll(".features-grid__list:first").slideToggle();
         });
