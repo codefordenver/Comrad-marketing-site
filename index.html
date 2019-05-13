@@ -12,6 +12,7 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="animate.css">
+ 
   <!-- Google fonts CSS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -131,7 +132,7 @@
     </div>
 
     <div class="features-grid__rule2">
-      <div class="features animated slideInRight" ID="scheduling"> 
+      <div class="wow slideInRight features" ID="scheduling"> 
       <div class="features-grid__button">
         <img src="images/playbutton-blue.svg" onmouseover="this.src='images/playbutton-blue-hover.svg';" onmouseout="this.src='images/playbutton-blue.svg';">
       </div>
@@ -151,7 +152,7 @@
       </div>
     </div>
 
-    <div class="features animated slideInRight" ID="playlist">  
+    <div class="wow slideInRight features" ID="playlist">  
     <div class="features-grid__button">
         <img src="images/playbutton-green.svg" onmouseover="this.src='images/playbutton-green-hover.svg';" onmouseout="this.src='images/playbutton-green.svg';">
       </div>
@@ -172,7 +173,7 @@
       </div>
     </div>
 
-    <div class="features animated slideInRight">
+    <div class="wow slideInRight features" ID="traffic">
       <div class="features-grid__button">
         <img src="images/playbutton-gold.svg" onmouseover="this.src='images/playbutton-gold-hover.svg';" onmouseout="this.src='images/playbutton-gold.svg';">
       </div>
@@ -190,7 +191,7 @@
       </div>
     </div>
 
-    <div class="features animated slideInRight">
+    <div class="wow slideInRight features" ID="station">
       <div class="features-grid__button">
         <img src="images/playbutton-red.svg" onmouseover="this.src='images/playbutton-red-hover.svg';" onmouseout="this.src='images/playbutton-red.svg';">
       </div>
@@ -208,7 +209,7 @@
       </div>
     </div>
 
-    <div class="features animated slideInRight">    
+    <div class="wow slideInRight features" ID="reporting">   
       <div class="features-grid__button">
         <img src="images/playbutton-purple.svg" onmouseover="this.src='images/playbutton-purple-hover.svg';" onmouseout="this.src='images/playbutton-purple.svg';">
       </div>
@@ -317,6 +318,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+  
+    <!--load WOW js from CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+</script>
+
+<!--Initiate WOW js, can be at the bottom of your file -->
+<script> new WOW().init(); </script>
+
 
     <script>
       $(function() {
@@ -334,14 +343,6 @@
             $("#links1").fadeIn();
           } else {
             $("#links1").fadeOut();
-          }
-        });
-
-        $(window).scroll(function() {
-          if ($(this).scrollTop() > 450) {
-            $("#scheduling").fadeIn();
-          } else {
-            $("#scheduling").fadeOut();
           }
         });
 

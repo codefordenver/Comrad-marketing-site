@@ -266,9 +266,11 @@ padding: 0px 14px 0px 14px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 20px;
+  overflow: hidden;
   grid-gap: 10px;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
+}
   /* grid-template-areas: 
   "features" "list"
   "features" "button"
@@ -286,6 +288,24 @@ padding: 0px 14px 0px 14px;
   "features" "button"
   "features" "title"
   "features" "list"; */
+
+.features #scheduling{
+  animation: slideInRight;
+}
+
+.features #playlist{
+  animation: slideInRight;
+}
+
+.features #traffic{
+  animation: slideInRight;
+}
+
+.features #station{
+  animation: slideInRight;
+}
+.features #reporting{
+  animation: slideInRight;
 }
 
 .features-grid__description{
