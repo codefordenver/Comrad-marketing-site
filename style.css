@@ -266,9 +266,11 @@ padding: 0px 14px 0px 14px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 20px;
+  overflow: hidden;
   grid-gap: 10px;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
+}
   /* grid-template-areas: 
   "features" "list"
   "features" "button"
@@ -286,6 +288,24 @@ padding: 0px 14px 0px 14px;
   "features" "button"
   "features" "title"
   "features" "list"; */
+
+.features #scheduling{
+  animation: slideInRight;
+}
+
+.features #playlist{
+  animation: slideInRight;
+}
+
+.features #traffic{
+  animation: slideInRight;
+}
+
+.features #station{
+  animation: slideInRight;
+}
+.features #reporting{
+  animation: slideInRight;
 }
 
 .features-grid__description{
@@ -506,7 +526,8 @@ padding: 0px 14px 0px 14px;
 }
 
 .footer {
-  padding: 20px 24px 0px 24px;
+  font-size: .75em;
+  padding: 20px 24px 20px 24px;
   display: inline-block;
   color:#FFF;
   background-color:#7DB2BF;
@@ -553,13 +574,13 @@ padding: 0px 14px 0px 14px;
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: 10px;
+  bottom: 1px;
   z-index: 5;
 }
 
 .footer-image {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
 }
 
 @media (max-width: 960px) {
@@ -628,4 +649,3 @@ padding: 0px 14px 0px 14px;
     margin-top: 0px;
   }
 }
-
